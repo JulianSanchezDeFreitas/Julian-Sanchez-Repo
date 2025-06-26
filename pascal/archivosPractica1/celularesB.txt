@@ -1,0 +1,9 @@
+101 5999 Samsung
+5 10 Smartphone con cámara de 64MP y 128GB de almacenamiento
+Galaxy A52
+102 6999 Xiaomi
+8 15 Pantalla AMOLED de 6.4 pulgadas, batería de larga duración
+Redmi Note 11
+103 4599 Motorola
+3 5 Diseño resistente al agua y desbloqueo facial rápido
+Moto G30

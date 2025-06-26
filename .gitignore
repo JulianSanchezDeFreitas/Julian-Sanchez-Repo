@@ -1,0 +1,11 @@
+# java metadata
+
+java/.metadata/
+java/AyED/.classpath
+java/AyED/.project
+java/AyED/.settings/org.eclipse.core.resources.prefs
+java/AyED/.settings/org.eclipse.jdt.core.prefs
+pascal/archivosPractica1/*.o
+pascal/archivosPractica1/*.exe
+pascal/practica2/*.o
+pascal/practica2/*.exe
