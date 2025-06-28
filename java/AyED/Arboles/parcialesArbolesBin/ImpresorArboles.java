@@ -1,4 +1,4 @@
-package arbol;
+package parcialesArbolesBin;
 
 public class ImpresorArboles {
 

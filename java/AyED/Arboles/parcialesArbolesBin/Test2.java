@@ -1,9 +1,6 @@
-package parcialesArboles;
+package parcialesArbolesBin;
 
 import java.util.ArrayList;
-
-import arbol.BinaryTree;
-import arbol.ImpresorArboles;
 
 public class Test2 {
 

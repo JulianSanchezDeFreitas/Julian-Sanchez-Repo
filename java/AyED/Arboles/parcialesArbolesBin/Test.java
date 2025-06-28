@@ -1,6 +1,4 @@
-package parcialesArboles;
-
-import arbol.BinaryTree;
+package parcialesArbolesBin;
 
 public class Test {
 

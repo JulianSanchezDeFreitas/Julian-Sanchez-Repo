@@ -1,4 +1,4 @@
-package arbol;
+package parcialesArbolesBin;
 
 import ejercicio1.Queue;
 

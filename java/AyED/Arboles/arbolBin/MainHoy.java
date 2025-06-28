@@ -1,4 +1,7 @@
-package arbol;
+package arbolBin;
+
+import parcialesArbolesBin.BinaryTree;
+import parcialesArbolesBin.ImpresorArboles;
 
 public class MainHoy {
 

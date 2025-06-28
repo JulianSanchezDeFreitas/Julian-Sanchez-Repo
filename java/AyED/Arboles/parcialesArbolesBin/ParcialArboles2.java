@@ -1,8 +1,6 @@
-package parcialesArboles;
+package parcialesArbolesBin;
 
 import java.util.ArrayList;
-
-import arbol.BinaryTree;
 
 public class ParcialArboles2 {
 	
