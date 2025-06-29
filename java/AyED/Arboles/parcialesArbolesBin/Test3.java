@@ -20,6 +20,9 @@ public class Test3 {
         BinaryTree<Integer> nodo12 = new BinaryTree<>(-1);
         BinaryTree<Integer> nodo13 = new BinaryTree<>(10);
         BinaryTree<Integer> nodo14 = new BinaryTree<>(-4);
+        BinaryTree<Integer> nodo15 = new BinaryTree<>(45);
+        BinaryTree<Integer> nodo16 = new BinaryTree<>(-78);
+        BinaryTree<Integer> nodo17 = new BinaryTree<>(78);
 
         nodo1.addLeftChild(nodo2);
         nodo2.addLeftChild(nodo3);
@@ -34,6 +37,9 @@ public class Test3 {
         nodo11.addLeftChild(nodo12);
         nodo11.addRightChild(nodo13);
         nodo13.addRightChild(nodo14);
+        nodo14.addLeftChild(nodo15);
+        nodo15.addLeftChild(nodo16);
+        nodo16.addLeftChild(nodo17);
 
         ParcialArboles3 test = new ParcialArboles3(nodo1);
         LinkedList<Integer> retorno= test.ejercicio();
