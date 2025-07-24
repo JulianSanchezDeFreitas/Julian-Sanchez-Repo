@@ -79,8 +79,8 @@ public class Recorridos<T> {
 		while(!cola.isEmpty()) {
 			Vertex<T> v = cola.deQueue();
 			lista.add(v.getData());
-			List<Edge<T>> arista = grafo.getEdges(v);
-			for(Edge<T> e:arista) {
+			List<Edge<T>> aristas = grafo.getEdges(v);
+			for(Edge<T> e:aristas) {
 				if(!marca[e.getTarget().getPosition()]) {
 					cola.enQueue(e.getTarget());
 					marca[e.getTarget().getPosition()] = true;
@@ -90,6 +90,33 @@ public class Recorridos<T> {
 		
 		return lista;
 		
+		
+	}
+	public void bfs (Graph<T> grafo) {
+		if(!grafo.isEmpty()) {			
+			Queue<Vertex<T>> cola = new Queue<>();
+			boolean[] marcas = new boolean[grafo.getSize()];
+			
+			for(Vertex<T> v : grafo.getVertices()) {
+				if (!marcas[v.getPosition()]) {
+					cola.enQueue(v);
+					marcas[v.getPosition()] = true;
+					while(!cola.isEmpty()) {
+						Vertex<T> vertice = cola.deQueue();
+						System.out.print(vertice.getData());
+						List<Edge<T>> aristas = grafo.getEdges(vertice);
+						for (Edge<T> a:aristas) {
+							if(!marcas[a.getTarget().getPosition()]) {
+								cola.enQueue(a.getTarget());
+								marcas[a.getTarget().getPosition()] = true;
+							}
+						}
+					}
+					
+				}
+		}
+			
+		}
 		
 	}
 	

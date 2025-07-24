@@ -11,23 +11,31 @@ public class Testing {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Graph<Integer> grafo = new AdjListGraph<>();
+		Vertex<Integer> vert7 = grafo.createVertex(7);
 		Vertex<Integer> vert1 = grafo.createVertex(1);
 		Vertex<Integer> vert4 = grafo.createVertex(4);
 		Vertex<Integer> vert2 = grafo.createVertex(2);
 		Vertex<Integer> vert3 = grafo.createVertex(3);
 		Vertex<Integer> vert5 = grafo.createVertex(5);
+		Vertex<Integer> vert6 = grafo.createVertex(6);
 
 		grafo.connect(vert1, vert4);
 		grafo.connect(vert1, vert2);
 		grafo.connect(vert2, vert3);
 		grafo.connect(vert2, vert1);
-		grafo.connect(vert5, vert5);
+		grafo.connect(vert6, vert5);
+		grafo.connect(vert3, vert6);
+
 		
-		Recorridos<Integer> dbsReco = new Recorridos<>();
-		List<Integer> lista = dbsReco.bfsListaMain(grafo, vert1);
-		for(int i = 0; i<lista.size();i++) {
-			System.out.print(lista.get(i));
-		}
+		
+		Recorridos<Integer> reco = new Recorridos<>();
+		reco.bfs(grafo);
+		
+		//Recorridos<Integer> dbsReco = new Recorridos<>();
+		//List<Integer> lista = dbsReco.bfsListaMain(grafo, vert1);
+		//for(int i = 0; i<lista.size();i++) {
+		//	System.out.print(lista.get(i));
+		//}
 	}
 
 }
