@@ -66,11 +66,8 @@ public class Mapa {
 					System.out.print("devuelvo");
 					System.out.print(caminoActual);
 					retorno = new LinkedList<>(); 
-					retorno.addAll(caminoActual);
-					
+					retorno.addAll(caminoActual);	
 				}
-						
-				
 			}
 		}
 		
@@ -92,5 +89,52 @@ public class Mapa {
 		}
 		return retorno;
 	}
+	private List<String> caminoMasCortoPrivado(Vertex<String> vertice , boolean[] marcas, List<String> caminoActual,List<String> retorno, String ciudad2){
+		caminoActual.add(vertice.getData());
+		System.out.println(caminoActual);
+		marcas[vertice.getPosition()] = true;
+		if (vertice.getData().equals(ciudad2)) {
+			if (retorno == null){
+				retorno = new LinkedList<>();
+				retorno.addAll(caminoActual);
+				
+			}else if (retorno.size() > caminoActual.size()){
+				retorno.clear();
+				retorno.addAll(caminoActual);
+			}
+			caminoActual.removeLast();
+			marcas[vertice.getPosition()] = false;
+			
+		}else{
+			List<Edge<String>> aristas = mapaCiudades.getEdges(vertice);
+			for (Edge<String> a : aristas) {
+				Vertex<String> verticeSiguiente = a.getTarget();
+				if (!marcas[verticeSiguiente.getPosition()]) {
+					retorno = caminoMasCortoPrivado(verticeSiguiente, marcas, caminoActual, retorno, ciudad2);
+					marcas[verticeSiguiente.getPosition()] = false;
+					
+				}
+			} 
+			caminoActual.removeLast();
+		}
+		return retorno;
+	}
+
+
+	public List<String> caminoMasCorto(String ciudad1, String ciudad2){
+		List<String> retorno = null;
+		if(mapaCiudades != null && !mapaCiudades.isEmpty()) {
+			Vertex<String> verticeInicial = mapaCiudades.search(ciudad1);
+			if(verticeInicial != null) {
+				boolean[] marcas = new boolean[mapaCiudades.getSize()];
+				List<String> caminoActual = new LinkedList<>();
+				retorno = caminoMasCortoPrivado(verticeInicial, marcas, caminoActual, retorno, ciudad2);
+						
+			}
+		}
+		return retorno;
+	}
+
+	
 	
 }

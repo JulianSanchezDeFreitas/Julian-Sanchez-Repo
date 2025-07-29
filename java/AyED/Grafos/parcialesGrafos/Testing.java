@@ -36,11 +36,13 @@ public class Testing {
 		Vertex<String> vert15 = grafo2.createVertex("comedor");
 		Vertex<String> vert16 = grafo2.createVertex("garage");
 
+		
 		grafo2.connect(vert11, vert14);
 		grafo2.connect(vert11, vert12);
 		grafo2.connect(vert12, vert13);
 		grafo2.connect(vert12, vert11);
 		grafo2.connect(vert16, vert15);
+		grafo2.connect(vert14, vert16);
 		grafo2.connect(vert13, vert16);
 		
 		
@@ -50,7 +52,7 @@ public class Testing {
 		//LinkedList<String> retorno = mapa.devolverCamino("baño", "casa");
 		List<String> bans = new LinkedList<>();
 		bans.add("casa");
-		List<String> retorno = mapa.devolverCaminoExceptuando("baño", "comedor", bans);
+		List<String> retorno = mapa.caminoMasCorto("baño", "garage");
 		System.out.println("retorno");
 		System.out.println(retorno);
 		//Recorridos<Integer> dbsReco = new Recorridos<>();
