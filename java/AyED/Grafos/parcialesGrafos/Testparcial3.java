@@ -3,7 +3,6 @@ package parcialesGrafos;
 import java.util.List;
 
 import grafoListAdy.AdjListGraph;
-import grafoListAdy.AdjListVertex;
 import grafosInterface.Graph;
 import grafosInterface.Vertex;
 
