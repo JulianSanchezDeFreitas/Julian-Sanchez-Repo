@@ -17,3 +17,6 @@ pascal/practica2/*.exe
 
 #pendientes
 pendientes.txt
+
+#maven
+java/apache-maven-3.9.11/
