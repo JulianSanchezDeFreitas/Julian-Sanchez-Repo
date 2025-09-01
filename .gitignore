@@ -6,6 +6,9 @@ java/AyED/bin
 java/AyED/.project
 java/AyED/.settings/org.eclipse.core.resources.prefs
 java/AyED/.settings/org.eclipse.jdt.core.prefs
+java/OO1/.classpath
+java/OO1/.project
+java/OO1/.settings
 
 # ejecutables y otros archivos pascal
 pascal/archivosPractica1/*.o
