@@ -10,9 +10,9 @@ java/OO1/.classpath
 java/OO1/.project
 java/OO1/.settings
 java/OO1/readme*
-java/OO1/pom.xl
+java/OO1/pom.xml
 java/OO1/target
-
+java/OO1/src/test/
 
 # ejecutables y otros archivos pascal
 pascal/archivosPractica1/*.o
