@@ -19,14 +19,18 @@ direcotorio=$1
 if  [ ! -d "$direcotorio" ] ; then
     exit 4
 fi
+
 contador_lectura=0
 contador_escritura=0
-
+# para cada archivo dentro del directorio
 for archivo in "$directorio"/* ; do
+    # si es un archivo entro al if
     if [ -f "$archivo" ] ; then
+        # si se tiene permisos de lectura sumo al contador
         if [ -r "$archivo" ] ; then
             ((contador_lectura++))
         fi
+        # si se tiene permisos de escritura sumo al contador
         if [ -w "$archivo" ] ; then
             ((contador_escritura++))
         fi

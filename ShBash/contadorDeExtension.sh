@@ -9,13 +9,17 @@ if [ $# -ne 1 ] ; then
     exit 1
 if
 
-#verifico que sea una extension
+
 extension=$1
 salida="reporte.txt"
-
-for dir in /home/* ; do
-    if [ -d "$dir" ]; then
-        usuario=$(basename "$dir")
-        cantidad=$(find "$dir" type -f name "*$extension" 2>/dev/null | wc -l)
+# para cada directorio en el home hago lo siguiente
+for dir in /home/* ; do 
+   # si el archivo actual es un directorio 
+    if [ -d "$dir" ]; then 
+        # me quedo con el nombre de usuario
+        usuario=$(basename "$dir")  
+        # cuento al cantidad de archivos dentro del directorio con dicha extension
+        cantidad=$(find "$dir" type -f name "*$extension" 2>/dev/null | wc -l) # los codigos de 2 se mandan a dev/null un "vacio"
+        # se escribe en reporte.txt el usuario y la cantidad
         echo "$usuario / $cantidad " >> "$salida"
     fi

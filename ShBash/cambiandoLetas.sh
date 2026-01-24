@@ -12,10 +12,10 @@
 
 #!/bin/bash
 
-for archivo in /. ; do
-    if [ -f "$archivo"] ; then    
-        nombre=$(basename "$archivo")
-        nombre_nuevo=$("$nombre" | tr "A-Za-z" "a-zA-Z" | tr -d "aA" )
-        echo "$nombre_nuevo" 
+for archivo in /. ; do #itero por cada archivo del sistema
+    if [ -f "$archivo"] ; then    #si es archivo entro al if
+        nombre=$(basename "$archivo") #me quedo con el nombre del archivo
+        nombre_nuevo=$("$nombre" | tr "A-Za-z" "a-zA-Z" | tr -d "aA" ) #cambios las mayusculas a minusculas y viceverza, ademas de borrar las a
+        echo "$nombre_nuevo" #imprimo el nuevo nombre
     fi
 done
