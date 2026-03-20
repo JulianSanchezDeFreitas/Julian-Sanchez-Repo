@@ -13,6 +13,13 @@ java/OO1/readme*
 java/OO1/pom.xml
 java/OO1/target
 java/OO1/src/test/
+java/OO2/.classpath
+java/OO2/.project
+java/OO2/.settings
+java/OO2/readme*
+java/OO2/pom.xml
+java/OO2/target
+java/OO2/src/test/
 
 # ejecutables y otros archivos pascal
 pascal/archivosPractica1/*.o
