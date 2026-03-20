@@ -22,8 +22,10 @@ java/OO2/target
 java/OO2/src/test/
 
 # ejecutables y otros archivos pascal
-pascal/archivosPractica1/*.o
-pascal/archivosPractica1/*.exe
+pascal/archivosPractica1/2025/*.o
+pascal/archivosPractica1/2025/*.exe
+pascal/archivosPractica1/2026/*.o
+pascal/archivosPractica1/2026/*.exe
 pascal/practica2/*.o
 pascal/practica2/*.exe
 # git ignore
