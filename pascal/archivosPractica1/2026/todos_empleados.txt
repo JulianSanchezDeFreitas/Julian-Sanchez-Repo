@@ -1,0 +1,10 @@
+Nombre: itadori apellido: yuji dni: 3918 edad: 23 numero de empleado: 78
+Nombre: kuro apellido: nobara dni: 2212 edad: 23 numero de empleado: 11
+Nombre: satoru apellido: gojo dni: 999 edad: 28 numero de empleado: 1
+Nombre: get apellido: suguru dni: 998 edad: 29 numero de empleado: 2
+Nombre: gei apellido: kenjaku dni: 2933 edad: 78 numero de empleado: 1233
+Nombre: detodo apellido: profe dni: 1239 edad: 200 numero de empleado: 2939
+Nombre: raro apellido: tengen dni: 2312 edad: 1000 numero de empleado: 3283
+Nombre: okkotsu apellido: yuta dni: 2323 edad: 19 numero de empleado: 98
+Nombre: yuka apellido: rika dni: 499 edad: 40 numero de empleado: 90
+Nombre: sutoru apellido: gejo dni: 3944 edad: 40 numero de empleado: 123

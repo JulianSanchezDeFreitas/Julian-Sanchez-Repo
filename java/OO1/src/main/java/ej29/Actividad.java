@@ -9,7 +9,7 @@ public abstract class Actividad {
 	protected Integer duarcion;
 	
 	
-	protected abstract double Costo();
+	public abstract double Costo();
 	
 	public String getDireccionIp() {
 		return direccionIp;
