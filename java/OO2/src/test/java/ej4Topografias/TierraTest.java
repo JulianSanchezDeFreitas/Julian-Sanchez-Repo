@@ -6,7 +6,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class TierraTest {
-	private Component tierra;
+	private Topografia tierra;
 	
 	@BeforeEach
 	void setUp() {

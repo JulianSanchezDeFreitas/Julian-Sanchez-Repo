@@ -1,6 +1,6 @@
 package ej4Topografias;
 
-public class Tierra implements Component{
+public class Tierra implements Topografia{
 	
 	public Tierra(){
 		
@@ -10,5 +10,8 @@ public class Tierra implements Component{
 		return 0;
 	}
 
+	public boolean esIgual(Topografia t) {
+		return t.proporcionDeAgua() == 0;
+	}
 	
 }
